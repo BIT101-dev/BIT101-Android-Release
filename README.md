@@ -37,7 +37,8 @@ git lfs track "*.apk"
 更新`/version/index.html`，形如`JSON`：
 ```json
 {
-	"min_version_code": 2333,
+	"min_version_code": 233,
+	"min_version_name":"x.x.x",
 	"version_code": 2333,
 	"version_name": "x.x.x",
 	"url": "http://android.bit101.cn/release/BIT101-x.x.x.apk",
@@ -45,7 +46,7 @@ git lfs track "*.apk"
 }
 ```
 
-其中`min_version_code`为最低支持版本，`version_code`为当前版本，`version_name`为当前版本名，`url`为下载链接，`msg`为更新说明。
+其中`min_version_code`为最低支持版本号，`min_version_name`为最低支持版本名，`version_code`为当前版本号，`version_name`为当前版本名，`url`为下载链接，`msg`为更新说明。
 
 部署后，`APP`内就会收到更新推送消息。
 
