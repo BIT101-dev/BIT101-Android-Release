@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          lfs: true
+
       # 上传到OSS
       - name: OSS Deployment Action
         # You may pin to the exact commit or the version.
